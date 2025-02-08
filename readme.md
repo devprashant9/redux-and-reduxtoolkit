@@ -26,7 +26,9 @@
 - dispatching various events to add, remove, increase, decrease items in cart based on id.
 - also handling side cases like to remove item from array if users decreases quantity below 1.
 
-## Undersatnding Complex State by E-Commerce Cart Example
+## Creating and Combining Multiple Reducers to Create a Single Reducer
+
 - understanding `multi reducers` to keep code clean.
 - the `createStore` takes only 1 reducer thus `combineReducers()` helps to achieve this.
 - while passing object to combine reducers method use the same `key` which is used to store actual state or else you have to deal with other variable. It's just a convention for better readability and understanding.
+- dispatching all available actions
