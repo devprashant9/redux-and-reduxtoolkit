@@ -32,3 +32,7 @@
 - the `createStore` takes only 1 reducer thus `combineReducers()` helps to achieve this.
 - while passing object to combine reducers method use the same `key` which is used to store actual state or else you have to deal with other variable. It's just a convention for better readability and understanding.
 - dispatching all available actions
+
+## Understanding Action Creators to Prevent Code Duplication
+- simply functions that creates and returns action object and minifies code duplication
+- created in same files where reducers are created

@@ -1,17 +1,17 @@
 import { combineReducers, createStore } from "redux";
-import productsReducer from "./multiReducers/productsReducer";
-import cartReducer from "./multiReducers/cartReducer";
-import wishListReducer from "./multiReducers/wishListReducer";
+import productsReducer from "../multiReducers/productsReducer";
+import cartReducer from "../multiReducers/cartReducer";
+import wishListReducer from "../multiReducers/wishListReducer";
 import {
   addItemCart,
   removeItemCart,
   increaseItemCart,
   decreaseItemCart,
-} from "./multiReducers/cartReducer";
+} from "../multiReducers/cartReducer";
 import {
   addItemWishList,
   removeItemWishList,
-} from "./multiReducers/wishListReducer";
+} from "../multiReducers/wishListReducer";
 
 const singleReducer = combineReducers({
   products: productsReducer,
