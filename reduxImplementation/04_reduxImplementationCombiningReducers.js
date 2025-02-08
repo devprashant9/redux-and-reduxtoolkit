@@ -1,7 +1,7 @@
 import { combineReducers, createStore } from "redux";
-import productsReducer from "./multiReducers/productsReducer";
-import cartReducer from "./multiReducers/cartReducer";
-import wishListReducer from "./multiReducers/wishListReducer";
+import productsReducer from "../multiReducers/productsReducer.js";
+import cartReducer from "../multiReducers/cartReducer.js";
+import wishListReducer from "../multiReducers/wishListReducer.js";
 
 const singleReducer = combineReducers({
   products: productsReducer,
