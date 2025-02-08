@@ -19,3 +19,9 @@
 - the `action` is a plain object with `type` property that is mandatory for eg. `action = {type: "increase", payload: 20}` and can have **data** in `payload` property.
 - implemented simple functionality to increase and decrease numbers by passing **action** object
 - implemented `switch case` and variables to store `action type` as per convention.
+
+## Undersatnding Complex State by E-Commerce Cart Example
+
+- creating a complex state by storing data on local system and then implemention `addToCart` and `wishList` from available data.
+- dispatching various events to add, remove, increase, decrease items in cart based on id.
+- also handling side cases like to remove item from array if users decreases quantity below 1.

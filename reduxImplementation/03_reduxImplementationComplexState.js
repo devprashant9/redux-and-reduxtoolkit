@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import { productsData } from "./productsData/productsData";
+import { productsData } from "../productsData/productsData.js";
 
 const complexState = {
   products: productsData,
