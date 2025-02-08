@@ -1,0 +1,14 @@
+{
+  "name": "reduxandtoolkit",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "redux": "^5.0.1"
+  }
+}

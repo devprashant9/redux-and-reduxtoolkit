@@ -7,7 +7,6 @@ const initialState = {
 };
 
 function updateStateReducer(state = initialState, action) {
-  // initial state is mandatory
   if (action.type === "increase/by/20") {
     return { ...state, count: state.count + action.payload };
   } else if (action.type === "decrease/by/1") {
@@ -15,8 +14,17 @@ function updateStateReducer(state = initialState, action) {
   }
   return state;
 }
-
-// const updatedReduxState = updateStateReducer(reduxState, {type: "increase/by/20", payload: 20});
-
 const store = createStore(updateStateReducer);
-console.log(store.getState());
+
+console.log("Initial State: ", store.getState()); // current state
+
+store.subscribe(() => console.log(store.getState())); // will be called when there is state change
+
+store.dispatch({
+  type: "increase/by/20",
+  payload: 20,
+});
+
+store.dispatch({
+  type: "decrease/by/1",
+});

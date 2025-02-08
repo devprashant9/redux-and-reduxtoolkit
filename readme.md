@@ -1,9 +1,21 @@
 # Mastering Redux and Redux Toolkit With React-Redux
 
 ## Setting Up For Redux
+
 - First understanding updation **mutating way** and **non mutating way**.
 - Shallow Copy vs Deep Copy
 - React doesn't understands the update when object is updated using **mutating way** because refrence still remains the same.
 - How **state** is updated in **redux** using `function` known as **reducers**. These are plain functions but since they update **redux state** therefore they are known as **reducers**.
 - The **state** and **action** parameters passed to reducer function
 - What actually is **action** object and its properties with few conventions
+
+## Setting Up Parcel to Use Redux
+
+- redux has a method `createStore` that requires a `function` to run
+- the `createStore(() => {})` returns a object with important `functions` like `getState()`, `dispatch()`, `subscribe()`
+- the `getState()` is used to get the `current state`
+- the `subscribe(cb)` method is called whenever there is any update in state
+- the `dispatch(action)` method is used to **dispatch** events
+- the `action` is a plain object with `type` property that is mandatory for eg. `action = {type: "increase", payload: 20}` and can have **data** in `payload` property.
+- implemented simple functionality to increase and decrease numbers by passing **action** object
+- implemented `switch case` and variables to store `action type` as per convention.
