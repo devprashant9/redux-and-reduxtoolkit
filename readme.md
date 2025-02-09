@@ -48,3 +48,8 @@
 
 - setting up cart functionality by testing with redux dev tools
 - not handled side cases
+
+## Shopping Cart Project to Implement Redux
+
+- implemented a few side cases like "if item already exists then increase quantity of that item" and "if quantity becomes less than 1 then remove that item"
+- implemented the same code with `immer js`

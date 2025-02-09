@@ -52,11 +52,15 @@ export default function cartReducer(state = [], action) {
       );
 
     case CART_DECREASE_ITEM:
-        return state.map((item) =>
-            item.id === action.payload.productId
-              ? { ...item, quantity: item.quantity - action.payload.quantity }
-              : item
-          );
+      const getItem = state.find((item) => item.id === action.payload.id);
+      if (getItem.quantity === 1) {
+        state.filter((item) => item.id !== getItem.id);
+      }
+      return state.map((item) =>
+        item.id === action.payload.productId
+          ? { ...item, quantity: item.quantity - action.payload.quantity }
+          : item
+      );
 
     default:
       return state;
