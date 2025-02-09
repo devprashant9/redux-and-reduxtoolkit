@@ -52,9 +52,9 @@ export default function cartReducer(state = [], action) {
       );
 
     case CART_DECREASE_ITEM:
-      const getItem = state.find((item) => item.id === action.payload.productId);
+      const getItem = state.find((item) => item.id === action.payload.id);
       if (getItem.quantity === 1) {
-        return state.filter((item) => item.id !== getItem.id);
+        state.filter((item) => item.id !== getItem.id);
       }
       return state.map((item) =>
         item.id === action.payload.productId

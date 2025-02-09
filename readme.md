@@ -53,3 +53,10 @@
 
 - implemented a few side cases like "if item already exists then increase quantity of that item" and "if quantity becomes less than 1 then remove that item"
 - implemented the same code with `immer js`
+
+## Setting up Cart Project With React
+- implemented `react-router` and `react-redux`
+- added cart and header pages
+- all products on main page
+- used fake store api for dummy data
+
