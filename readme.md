@@ -34,10 +34,17 @@
 - dispatching all available actions
 
 ## Understanding Action Creators to Prevent Code Duplication
+
 - simply functions that creates and returns action object and minifies code duplication
 - created in same files where reducers are created
 
 ## Understanding Immer JS to Update State in Mutating Way
+
 - it is used by redux toolkit because it helps us to update state in a mutating way
 - shortens our code makes it more easy and readable
 - the `produce()`methods provides a duplicate state on which we update in a mutating way and it is automatically taken care by immer behind the scenes
+
+## Shopping Cart Project to Implement Redux
+
+- setting up cart functionality by testing with redux dev tools
+- not handled side cases
