@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 function Cart() {
   const cartItems = useSelector((state) => state.cartItems);
-  console.log(cartItems);
   return (
     <div className="cart-container" key={crypto.randomUUID()}>
       <h1>Items In Your Cart</h1>

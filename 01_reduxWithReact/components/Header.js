@@ -5,6 +5,7 @@ import { Link } from "react-router";
 
 function Header() {
   const cartItems = useSelector((state) => state.cartItems);
+  const wishLists = useSelector((state) => state.wishLists);
   return (
     <div className="header-container">
       <Link to={"/"}>
@@ -28,7 +29,7 @@ function Header() {
         <Link to={"/wishlist"}>
           <div className="image-container">
             <img src={heartIcon} alt={heartIcon} />
-            <p className="wishlist-count">0</p>
+            <p className="wishlist-count">{wishLists.length}</p>
           </div>
         </Link>
       </div>
